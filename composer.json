@@ -1,0 +1,17 @@
+{
+  "name": "wpscholar/wp-cookie-manager",
+  "description": "A WordPress library to simplify cookie management.",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Micah Wood",
+      "email": "micah@wpscholar.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "wpscholar\\WordPress\\": ""
+    }
+  }
+}
