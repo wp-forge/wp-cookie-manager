@@ -1,5 +1,5 @@
 # WordPress Cookie Manager
-A WordPress library to simplify managing cookies.
+A WordPress library to simplify cookie management.
 
 ## What It Does
 Abstracts away all the PHP cookie management and WordPress cookie constants so you can just get and set cookies. 
