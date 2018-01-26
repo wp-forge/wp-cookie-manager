@@ -14,9 +14,9 @@ class CookieManager {
 	 *
 	 * @param string $name The cookie name.
 	 * @param string $value The cookie value.
-	 * @param int $expiration A Unix timestamp representing the expiration (use time() plus seconds until expiration).
+	 * @param int $expiration A Unix timestamp representing the expiration (use time() plus seconds until expiration). Defaults to 0, which will cause the cookie to expire at the end of the user's browsing session.
 	 */
-	public static function setCookie( $name, $value, $expiration ) {
+	public static function setCookie( $name, $value, $expiration = 0 ) {
 		setcookie( $name, $value, $expiration, COOKIEPATH, COOKIE_DOMAIN );
 	}
 
