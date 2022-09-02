@@ -1,20 +1,18 @@
 <?php
 
-namespace wpscholar\WordPress;
+namespace WP_Forge\CookieManager;
 
 /**
  * Class CookieManager
- *
- * @package wpscholar\WordPress
  */
 class CookieManager {
 
 	/**
 	 * Set a cookie
 	 *
-	 * @param string $name The cookie name.
-	 * @param string $value The cookie value.
-	 * @param int $expiration A Unix timestamp representing the expiration (use time() plus seconds until expiration). Defaults to 0, which will cause the cookie to expire at the end of the user's browsing session.
+	 * @param string $name       The cookie name.
+	 * @param string $value      The cookie value.
+	 * @param int    $expiration A Unix timestamp representing the expiration (use time() plus seconds until expiration). Defaults to 0, which will cause the cookie to expire at the end of the user's browsing session.
 	 */
 	public static function setCookie( $name, $value, $expiration = 0 ) {
 		$secure = ( 'https' === parse_url( home_url(), PHP_URL_SCHEME ) );
@@ -35,8 +33,8 @@ class CookieManager {
 	/**
 	 * Get a cookie
 	 *
-	 * @param string $name The cookie name.
-	 * @param mixed $default The default value to return if the cookie doesn't exist (defaults to null).
+	 * @param string $name    The cookie name.
+	 * @param mixed  $default The default value to return if the cookie doesn't exist (defaults to null).
 	 *
 	 * @return mixed Returns the value or the default if the cookie doesn't exist.
 	 */
@@ -51,7 +49,7 @@ class CookieManager {
 	 */
 	public static function deleteCookie( $name ) {
 		if ( self::hasCookie( $name ) ) {
-			$value = self::getCookie( $name );
+			$value      = self::getCookie( $name );
 			$expiration = time() - HOUR_IN_SECONDS;
 			setcookie( $name, $value, $expiration, COOKIEPATH, COOKIE_DOMAIN );
 		}

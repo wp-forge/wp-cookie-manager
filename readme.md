@@ -9,7 +9,7 @@ Abstracts away all the PHP cookie management and WordPress cookie constants so y
 1. Add to your project via [Composer](https://getcomposer.org/):
 
 ```bash
-$ composer require wpscholar/wp-cookie-management
+$ composer require wp-forge/wp-cookie-management
 ```
 
 2. Make sure you have added the Composer autoloader to your project:
@@ -25,7 +25,7 @@ require __DIR__ . '/vendor/autoload.php';
 ```php
 <?php
 
-use wpscholar\WordPress\CookieManager;
+use WP_Forge\CookieManager;
 
 // Create a cookie
 $cookie = CookieManager::setCookie('mycookie', 'myvalue', time() + 86400); // Expires one day from now

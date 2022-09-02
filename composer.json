@@ -1,5 +1,5 @@
 {
-  "name": "wpscholar/wp-cookie-manager",
+  "name": "wp-forge/wp-cookie-manager",
   "description": "A WordPress library to simplify cookie management.",
   "type": "library",
   "license": "GPL-2.0-or-later",
@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "wpscholar\\WordPress\\": ""
+      "WP_Forge\\CookieManager\\": ""
     }
   }
 }
