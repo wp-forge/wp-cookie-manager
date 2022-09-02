@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "WP_Forge\\CookieManager\\": ""
+      "WP_Forge\\CookieManager\\": "includes/"
     }
   }
 }
