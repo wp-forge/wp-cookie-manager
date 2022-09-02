@@ -25,7 +25,7 @@ require __DIR__ . '/vendor/autoload.php';
 ```php
 <?php
 
-use WP_Forge\CookieManager;
+use WP_Forge\CookieManager\CookieManager;
 
 // Create a cookie
 $cookie = CookieManager::setCookie('mycookie', 'myvalue', time() + 86400); // Expires one day from now
