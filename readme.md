@@ -11,7 +11,7 @@ Abstracts away all the PHP cookie management and WordPress cookie constants so y
 1. Add to your project via [Composer](https://getcomposer.org/):
 
 ```bash
-$ composer require wp-forge/wp-cookie-management
+$ composer require wp-forge/wp-cookie-manager
 ```
 
 2. Make sure you have added the Composer autoloader to your project:
